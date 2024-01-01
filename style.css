@@ -311,7 +311,7 @@ footer {
 
 /* ... (diğer stiller) */
 /* Sepete Ekle Butonu */
-.product-details button {
+.product-details #addToCartBtn,#removeFromCartBtn {
   font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
   padding: 12px 20px;
@@ -323,9 +323,24 @@ footer {
   transition: background-color 0.3s;
 }
 
-.product-details button:hover {
-  background-color: #45a049; /* Hover renk örneği */
+.product-details #addToCartBtn:hover,#removeFromCartBtn:hover {
+  background-color: #2478bd; /* Hover renk örneği */
+  font-size: 18px;
 }
+
+#deleteFromCartBtn {
+  font-size: 14px;
+  background-color: transparent; /* Kırmızı renk örneği */
+  border-color: transparent;
+}
+#deleteFromCartBtn:hover {
+  font-size: 16px;
+  background-color: transparent; /* Kırmızı renk örneği */
+  border-color: transparent;
+  color: red;
+}
+
+
 #cart-button-container {
   text-align: center;
   margin-top: 10px;
@@ -346,5 +361,45 @@ footer {
   background-color: #45a049;
 }
 .signin-container {
-  margin-top: 80px; /* Adjust the value based on your design */
+  margin-top: 80px; /*Adjust the value based on your design*/
+  display: block;
 }
+.signin-heading {
+  font-size: 36px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+  color: #56575b;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.SGN {
+  margin: 20px 10px;
+}
+.signin-btnn {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 16px;
+  padding: 12px 20px;
+  background-color: #664caf; /* Yeşil renk örneği */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+.signin-btnn:hover {
+  align-items: center;
+  background-color: rgb(32, 150, 21);
+  color: #664caf;
+}
+/* BEGIN: Header Text */
+.footer-textt {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+/* END: Header Text */

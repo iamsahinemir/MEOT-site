@@ -44,6 +44,7 @@
     </p>
     <button id="addToCartBtn" onclick="addToCart()">Sepete Ekle</button>
     <button id="removeFromCartBtn" onclick="removeFromCart()">Sepetten Kaldır</button>
+    <button id="deleteFromCartBtn" onclick="deleteFromCart()">Sepeti Boşalt</button>
   </div>
   
   <div id="cart-info">
@@ -77,6 +78,13 @@
       if (totalItems > 0) {
         totalItems--;
         totalPrice -= 19.99;
+        updateCartInfo();
+      }
+    }
+    function deleteFromCart() {
+      if (totalItems > 0) {
+        totalItems = 0;
+        totalPrice = 0;
         updateCartInfo();
       }
     }
