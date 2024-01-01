@@ -72,18 +72,20 @@
 
 <body>
 
-<!-- Top Navigation Bar -->
-<nav class="navbar">
-  <button onclick="window.location.href='index.html';"class="name-btn">MEOT</button>
-  <div class="nav-right">
-    <button onclick="window.location.href='about.html';" class="about-btn">About</button>
-    <button onclick="window.location.href='service.html';" class="service-btn">Service</button>
-    <button onclick="window.location.href='contact.html';" class="contact-btn">Contact</button>
-    <button onclick="window.location.href='products.html';" class="products-btn">Products</button>
-    <button onclick="window.location.href='instal.html';" class="instal-btn">Installation</button>
-    <button onclick="window.location.href='signin.html';" class="signin-btn">Sign In</button>
-  </div>
-</nav>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+      <button onclick="window.location.href='index.html';"class="name-btn">MEOT</button>
+      <div class="nav-right">
+        <button onclick="window.location.href='about.html';" class="about-btn">About</button>
+        <button onclick="window.location.href='service.html';" class="service-btn">Service</button>
+        <button onclick="window.location.href='contact.html';" class="contact-btn">Contact</button>
+        <button onclick="window.location.href='products.html';" class="products-btn">Products</button>
+        <button onclick="window.location.href='instal.html';" class="instal-btn">Installation</button>
+        <button onclick="window.location.href='signin.html';" class="signin-btn">Sign In</button>
+        <button onclick="window.location.href='survey.html';" class="survey-btn">Survey</button>
+      </div>
+    </nav>
+
 
   <div class="installation-container">  
 <!-- Furniture 1 -->
@@ -141,7 +143,12 @@
       <a href="#" class="show-steps-btn" onclick="showSteps(event, 'circle-stool')">Show Installation Steps</a>
     </div>
   </div>
-
+    <!-- Footer -->
+    <footer>
+      <p class="footer-text">
+          meotstudio
+      </p>
+    </footer>
   <script>
     function showSteps(event, elementId) {
       event.preventDefault(); 

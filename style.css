@@ -24,7 +24,7 @@ html {
 }
 
 /* Styling Navbar Buttons */
-.name-btn, .about-btn, .service-btn, .contact-btn, .send-message-btn, .products-btn, .instal-btn, .signin-btn {
+.name-btn, .about-btn, .service-btn, .contact-btn, .send-message-btn, .products-btn, .instal-btn, .signin-btn, .survey-btn {
   /* font-family:'Times New Roman', Georgia, serif; */
   font-family: 'Times New Roman', Georgia, serif ;
   letter-spacing: 4px;
@@ -38,7 +38,7 @@ html {
   margin-right: auto;
 }
 /* Hover effect on buttons */
-.name-btn:hover, .about-btn:hover, .service-btn:hover, .contact-btn:hover , .products-btn:hover, .instal-btn:hover, .signin-btn:hover{
+.name-btn:hover, .about-btn:hover, .service-btn:hover, .contact-btn:hover , .products-btn:hover, .instal-btn:hover, .signin-btn:hover, .survey-btn:hover{
   cursor: pointer;
   background-color: #cccccc;
 }
@@ -246,10 +246,8 @@ footer {
     border: 1px solid #555;
   }
   
-  /* ... (diğer stiller) */
-  /* ... (diğer stiller) */
 
-/* Product Page Styles */
+
 .product-heading {
   font-size: 36px;
   letter-spacing: 5px;
@@ -257,7 +255,7 @@ footer {
   font-family: 'Times New Roman', Times, serif;
   color: #56575b;
   text-align: center;
-  margin-top: 50px; /* Ayarlayabilirsiniz */
+  margin-top: 50px; 
 }
 
 .product {
@@ -306,16 +304,15 @@ footer {
   color: #333;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  clear: both; /* Bu stil, önceki elemanlarla arasındaki float temizlemek için eklenmiştir */
+  clear: both; 
 }
 
-/* ... (diğer stiller) */
-/* Sepete Ekle Butonu */
+
 .product-details #addToCartBtn,#removeFromCartBtn {
   font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
   padding: 12px 20px;
-  background-color: #4CAF50; /* Yeşil renk örneği */
+  background-color: #4CAF50; 
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -324,18 +321,18 @@ footer {
 }
 
 .product-details #addToCartBtn:hover,#removeFromCartBtn:hover {
-  background-color: #2478bd; /* Hover renk örneği */
+  background-color: #2478bd; 
   font-size: 18px;
 }
 
 #deleteFromCartBtn {
   font-size: 14px;
-  background-color: transparent; /* Kırmızı renk örneği */
+  background-color: transparent; 
   border-color: transparent;
 }
 #deleteFromCartBtn:hover {
   font-size: 16px;
-  background-color: transparent; /* Kırmızı renk örneği */
+  background-color: transparent; 
   border-color: transparent;
   color: red;
 }
@@ -395,11 +392,41 @@ footer {
   background-color: rgb(32, 150, 21);
   color: #664caf;
 }
-/* BEGIN: Header Text */
+
 .footer-textt {
   font-size: 24px;
   font-weight: bold;
   color: #333;
   text-align: center;
 }
-/* END: Header Text */
+.survey-heading {
+  font-size: 36px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+  color: #56575b;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.srvy {
+  margin: 20px 10px;
+}
+.survey-btnn {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 16px;
+  padding: 12px 20px;
+  background-color: #664caf; /* Yeşil renk örneği */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+.survey-btnn:hover {
+  align-items: center;
+  background-color: rgb(32, 150, 21);
+  color: #664caf;
+}

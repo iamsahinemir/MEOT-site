@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satisfaction Survey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+<nav class="navbar">
+    <button onclick="window.location.href='index.html';"class="name-btn">MEOT</button>
+    <div class="nav-right">
+      <button onclick="window.location.href='about.html';" class="about-btn">About</button>
+      <button onclick="window.location.href='service.html';" class="service-btn">Service</button>
+      <button onclick="window.location.href='contact.html';" class="contact-btn">Contact</button>
+      <button onclick="window.location.href='products.html';" class="products-btn">Products</button>
+      <button onclick="window.location.href='instal.html';" class="instal-btn">Installation</button>
+      <button onclick="window.location.href='signin.html';" class="signin-btn">Sign In</button>
+      <button onclick="window.location.href='survey.html';" class="survey-btn">Survey</button>
+    </div>
+  </nav>
+  <div >
+<br>
+<br>
+<br>
+<br>
+  </div>
+<div id="survey-container">
+   <h2 class="survey-heading">Survey</h2>
+    <form id="surveyForm">
+      <label for="name" style="font-family: Times New Roman, Times, serif;">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="satisfaction">Satisfaction Level:</label>
+      <input
+        type="number"
+        id="satisfaction"
+        name="satisfaction"
+        min="1"
+        max="10"
+        required
+      /><br /><br />
+    </div>
+    <div class="srvy">
+      <input type="submit" value="Submit" class="survey-btnn"/>
+    </form>
+    <p id="discountCode"></p>
+  </div>
+      <!-- Footer -->
+      <footer>
+        <p class="footer-text">
+            meotstudio
+        </p>
+      </footer>
+<script>
+document.getElementById("surveyForm").addEventListener("submit", function (event) {event.preventDefault();
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var satisfaction = document.getElementById("satisfaction").value;
+
+    if (satisfaction < 6) {
+      var discountCode =
+        "Teşekkürler, " + name + "! Yaşadığınız aksaklık için özür dileriz. Telafi edebilmek adına indirim kodunuz: DSCT001";
+      document.getElementById("discountCode").textContent = discountCode;
+    } else {
+      document.getElementById("discountCode").textContent =
+        "Teşekkürler " + name + "! Sizi memnun edebildiğimiz için çok mutluyuz.";
+    }
+  });
+</script>
+  </body>
+</html>
