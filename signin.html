@@ -9,38 +9,33 @@
   </head>
   <body>
         <!-- Top Navigation Bar -->
-<nav class="navbar">
-  <button onclick="window.location.href='index.html';"class="name-btn">MEOT</button>
-  <div class="nav-right">
-    <button onclick="window.location.href='about.html';" class="about-btn">About</button>
-    <button onclick="window.location.href='service.html';" class="service-btn">Service</button>
-    <button onclick="window.location.href='contact.html';" class="contact-btn">Contact</button>
-    <button onclick="window.location.href='products.html';" class="products-btn">Products</button>
-    <button onclick="window.location.href='instal.html';" class="instal-btn">Installation</button>
-    <button onclick="window.location.href='signin.html';" class="signin-btn">Sign In</button>
-    <button onclick="window.location.href='survey.html';" class="survey-btn">Survey</button>
-  </div>
-</nav>
+        <nav class="navbar">
+          <button onclick="window.location.href='index.html';"class="name-btn">MEOT</button>
+          <div class="nav-right">
+            <button onclick="window.location.href='about.html';" class="about-btn">About</button>
+            <button onclick="window.location.href='service.html';" class="service-btn">Service</button>
+            <button onclick="window.location.href='contact.html';" class="contact-btn">Contact</button>
+            <button onclick="window.location.href='products.html';" class="products-btn">Products</button>
+            <button onclick="window.location.href='instal.html';" class="instal-btn">Installation</button>
+            <button onclick="window.location.href='signin.html';" class="signin-btn">Sign In</button>
+            <button onclick="window.location.href='survey.html';" class="survey-btn">Survey</button>
+            <button onclick="window.location.href='whoweare.html';" class="whoweare-btn">Who We Are</button>
+          </div>
+        </nav>
 
 
-    <!-- Sign In Form -->
-    <div class="signin-container">
-      <h2 class="signin-heading">Sign In</h2>
-      <form action="">
-        <input type="text" name="username" placeholder="Username" required />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          required
-        />
-      </form>
-    </div>
-    <div class="SGN">
-      <button type="submit" class="signin-btnn">
-        Sign In
-      </button>
-    </div>
+        <div class="signin-container">
+        <h2 class="signin-heading">Sign In</h2>
+        <form id="signInForm" action="">
+          <input type="text" name="username" id="username" placeholder="Username" required />
+          <input type="password" name="password" id="password" placeholder="Password" required />
+        </form>
+      </div>
+      <div class="SGN">
+        <button type="button" class="signin-btnn" onclick="signIn()">
+          Sign In
+        </button>
+      </div>
 
      <!-- Footer -->
      <footer>
@@ -48,5 +43,22 @@
           meotstudio
       </p>
     </footer>
+    <script>
+     function signIn() {
+
+    var form = document.getElementById('signInForm');
+
+
+    if (form.checkValidity()) {
+ 
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+    } 
+    else {
+ 
+      alert('Lütfen gerekli alanları doldurun.');
+    }
+  }
+    </script>
   </body>
 </html>

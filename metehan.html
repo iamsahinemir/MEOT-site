@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metehan Eravcı Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        .metehan-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .metehan-heading {
+            font-size: 36px;
+            font-weight: 400;
+            letter-spacing: 5px;
+            margin-top: 16px;
+            margin-bottom: 24px;
+            color: #56575b;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .metehan-img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 24px;
+        }
+
+        .metehan-info {
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 400;
+            width: 100%;
+            line-height: 27px;
+            text-align: justify;
+            margin-bottom: 32px;
+            color: #56575b;
+
+        }
+
+        .about-heading {
+            font-size: 36px;
+            font-weight: 400;
+            letter-spacing: 5px;
+            margin-top: 20px;
+            margin-bottom: 28px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 5px 0;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+
+        .about-link {
+            display: block;
+            margin-top: 20px;
+            color: #3366cc;
+            text-decoration: none;
+            border-bottom: none;
+            transition: color 0.3s;
+        }
+
+        .about-link:hover {
+            color: #F23050;
+        }
+
+.instagram-icon {
+            font-size: 30px;
+            color: #56575b;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .instagram-icon:hover {
+            color: #F23050;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <button onclick="window.location.href='index.html';"class="name-btn">MEOT</button>
+        <div class="nav-right">
+          <button onclick="window.location.href='about.html';" class="about-btn">About</button>
+          <button onclick="window.location.href='service.html';" class="service-btn">Service</button>
+          <button onclick="window.location.href='contact.html';" class="contact-btn">Contact</button>
+          <button onclick="window.location.href='products.html';" class="products-btn">Products</button>
+          <button onclick="window.location.href='instal.html';" class="instal-btn">Installation</button>
+          <button onclick="window.location.href='signin.html';" class="signin-btn">Sign In</button>
+          <button onclick="window.location.href='survey.html';" class="survey-btn">Survey</button>
+          <button onclick="window.location.href='whoweare.html';" class="whoweare-btn">Who We Are</button>
+        </div>
+      </nav>
+
+<div>
+    <br>
+    <br>
+    <br>
+</div>
+    <section class="metehan-container">
+        <h2 class="metehan-heading">Metehan Eravcı</h2>
+        <img class="metehan-img" src="meot\metehan.jpg" alt="Metehan Eravcı Photo">
+        <p class="metehan-info">
+           Metehan is 22 years old and a 3rd year student at Kadir Has University Management Information Systems. Meot also handles drawing, design and marketing.
+        </p>
+
+        <a class="about-link" href="whoweare.html">Who Are We</a>
+    </section>
+
+    <footer>
+        <a href="https://www.instagram.com/metehanes_rvc/">
+          <img src="meot\instagram.png" alt="Instagram Logo" width="30" height="20">
+        </a>
+        <p>&copy; 2023 MEOT. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function changeColor() {
+            document.querySelector('.metehan-heading').style.color = '#F23050'; 
+        }
+
+        function restoreColor() {
+            document.querySelector('.metehan-heading').style.color = '#56575b'; 
+        }
+    </script>
+
+</body>
+
+</html>

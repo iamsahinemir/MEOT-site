@@ -24,7 +24,7 @@ html {
 }
 
 /* Styling Navbar Buttons */
-.name-btn, .about-btn, .service-btn, .contact-btn, .send-message-btn, .products-btn, .instal-btn, .signin-btn, .survey-btn {
+.name-btn, .about-btn, .service-btn, .contact-btn, .send-message-btn, .products-btn, .instal-btn, .signin-btn, .survey-btn, .whoweare-btn {
   /* font-family:'Times New Roman', Georgia, serif; */
   font-family: 'Times New Roman', Georgia, serif ;
   letter-spacing: 4px;
@@ -38,7 +38,7 @@ html {
   margin-right: auto;
 }
 /* Hover effect on buttons */
-.name-btn:hover, .about-btn:hover, .service-btn:hover, .contact-btn:hover , .products-btn:hover, .instal-btn:hover, .signin-btn:hover, .survey-btn:hover{
+.name-btn:hover, .about-btn:hover, .service-btn:hover, .contact-btn:hover , .products-btn:hover, .instal-btn:hover, .signin-btn:hover, .survey-btn:hover, .whoweare-btn:hover{
   cursor: pointer;
   background-color: #cccccc;
 }
@@ -200,7 +200,8 @@ input {
 }
 
 footer {
-  padding: 32px 0;
+  margin-top: auto;
+  padding: 5px 0;
   text-align: center;
   background-color: #f1f1f1;
 }
@@ -367,7 +368,7 @@ footer {
   display: flex;
   font-size: 16px;
   padding: 12px 20px;
-  background-color: #664caf; /* Yeşil renk örneği */
+  background-color: #664caf; 
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -387,6 +388,10 @@ footer {
   color: #333;
   text-align: center;
 }
+.survey-container {
+  margin-top: 80px; 
+  display: block;
+}
 .survey-heading {
   font-size: 36px;
   letter-spacing: 5px;
@@ -405,7 +410,7 @@ footer {
   display: flex;
   font-size: 16px;
   padding: 12px 20px;
-  background-color: #664caf; /* Yeşil renk örneği */
+  background-color: #664caf; 
   color: #fff;
   border: none;
   border-radius: 4px;
