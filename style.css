@@ -213,9 +213,7 @@ footer {
 #footer-link:hover {
   color: rgb(0, 180, 0);
 }
-/* ... (diğer stiller) */
 
-/* Products Page Styles */
 .products-heading {
     font-size: 36px;
     letter-spacing: 5px;
@@ -223,13 +221,15 @@ footer {
     font-family: 'Times New Roman', Times, serif;
     color: #56575b;
     text-align: center;
-    margin-top: 50px; /* Ayarlayabilirsiniz */
+    margin-top: 50px; 
   }
   
   .product {
     margin: 20px;
     text-align: center;
   }
+  
+ 
   
   .product img {
 
@@ -241,12 +241,6 @@ footer {
     transition: 0.3s;
     cursor: pointer;
   }
-  
-  .product img:hover {
-    border: 1px solid #555;
-  }
-  
-
 
 .product-heading {
   font-size: 36px;
@@ -263,16 +257,7 @@ footer {
   text-align: center;
 }
 
-.product img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  transition: 0.3s;
-  cursor: pointer;
-}
+
 
 .product img:hover {
   border: 1px solid #555;
@@ -295,6 +280,9 @@ footer {
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
   color: #333;
+}
+.product a{
+  text-decoration: none;
 }
 /* Sepet Bilgisi */
 #cart-info {
