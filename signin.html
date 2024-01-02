@@ -44,21 +44,18 @@
       </p>
     </footer>
     <script>
-     function signIn() {
 
-    var form = document.getElementById('signInForm');
+      function signIn() {
+        var form = document.getElementById('signInForm');
 
-
-    if (form.checkValidity()) {
- 
-      var username = document.getElementById('username').value;
-      var password = document.getElementById('password').value;
-    } 
-    else {
- 
-      alert('Lütfen gerekli alanları doldurun.');
-    }
-  }
+        if (form.checkValidity()) {
+          var username = document.getElementById('username').value;
+          var password = document.getElementById('password').value;
+          alert('Giriş Başarılı! Kullanıcı Adı: ' + username);
+        } else {
+          alert('Lütfen gerekli alanları doldurun.');
+        }
+      }
     </script>
   </body>
 </html>
